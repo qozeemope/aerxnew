@@ -1,5 +1,7 @@
 // import Pools from "../components/Pools";
 import Wallets from "../components/BranchWallet/tokenWallet";
+import NewSendTokens from "../components/BranchWallet/NewSendTokens";
+// import NewPool from "../components/BranchWallet/NewPool";
 // import AddLiquidity from "../components/BranchWallet/AddLiquidity"
 import CircleList from "../components/BranchWallet/CircleList";
 import NewProfile from "../components/Profiles/NewProfile";
@@ -13,7 +15,9 @@ const WalletIndex = () => {
       {/* <RecieveToken /> */}
       {/* <AddLiquidity /> */}
       {/* <CircleList /> */}
-      <NewProfile />
+      {/* <NewProfile /> */}
+      <NewSendTokens />
+      {/* <NewPool /> */}
     </div>
   );
 };
