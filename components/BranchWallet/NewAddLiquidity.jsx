@@ -10,8 +10,10 @@ import {
   PseudoBox,
 } from "@chakra-ui/react";
 import { MinusIcon } from "@chakra-ui/icons";
+import { nearStore } from "../../store/near";
 
-function NewAddLiquidity() {
+function NewAddLiquidity(props) {
+  const nearState = nearStore((state) => state);
   const addLiquidity = () => {
     console.log("Add liquidity has been clicked");
     // try {
@@ -60,7 +62,8 @@ function NewAddLiquidity() {
         mb-[26.825px]
         mt-2
         "
-          //   onClick={props.toggleWallet}
+          onClick={props.toggleWallet}
+          cursor="pointer"
         >
           <MinusIcon
             w="21.92px"
@@ -86,7 +89,7 @@ function NewAddLiquidity() {
         fontFamily="Poppins"
         fontSize="10.96px"
         fontWeight="400"
-        onClick={() => props.exchange()}
+        onClick={() => props.liquidity()}
         cursor="pointer"
       >
         <Image
